@@ -92,21 +92,21 @@ const Header = ({ setGrouping, setSortOption }) => {
                   padding: "5px",
                   borderRadius: "3px",
                   border: "1px solid #ccc",
-                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)", // Added box shadow
+                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
                   outline: "none",
-                  transition: "border-color 0.2s, box-shadow 0.2s", // Added transition for box shadow
+                  transition: "border-color 0.2s, box-shadow 0.2s",
                   width: "130px",
                   flex: 1,
                 }}
                 onFocus={(e) => {
                   e.currentTarget.style.borderColor = "#007BFF";
                   e.currentTarget.style.boxShadow =
-                    "0 0 4px rgba(0, 123, 255, 0.5)"; // Focus box shadow
+                    "0 0 4px rgba(0, 123, 255, 0.5)";
                 }}
                 onBlur={(e) => {
                   e.currentTarget.style.borderColor = "#ccc";
                   e.currentTarget.style.boxShadow =
-                    "0 2px 4px rgba(0, 0, 0, 0.1)"; // Reset box shadow
+                    "0 2px 4px rgba(0, 0, 0, 0.1)";
                 }}
               >
                 <option value="status">Status</option>
@@ -139,21 +139,21 @@ const Header = ({ setGrouping, setSortOption }) => {
                   padding: "5px",
                   borderRadius: "3px",
                   border: "1px solid #ccc",
-                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)", // Added box shadow
+                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
                   outline: "none",
-                  transition: "border-color 0.2s, box-shadow 0.2s", // Added transition for box shadow
+                  transition: "border-color 0.2s, box-shadow 0.2s",
                   width: "150px",
                   flex: 1,
                 }}
                 onFocus={(e) => {
                   e.currentTarget.style.borderColor = "#007BFF";
                   e.currentTarget.style.boxShadow =
-                    "0 0 4px rgba(0, 123, 255, 0.5)"; // Focus box shadow
+                    "0 0 4px rgba(0, 123, 255, 0.5)";
                 }}
                 onBlur={(e) => {
                   e.currentTarget.style.borderColor = "#ccc";
                   e.currentTarget.style.boxShadow =
-                    "0 2px 4px rgba(0, 0, 0, 0.1)"; // Reset box shadow
+                    "0 2px 4px rgba(0, 0, 0, 0.1)";
                 }}
               >
                 <option value="priority">Priority</option>

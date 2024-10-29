@@ -9,8 +9,8 @@ import todoImg from "../assets/todo.svg";
 import inProgressImg from "../assets/progress.svg";
 import backlogImg from "../assets/backlog.svg";
 import userImg from "../assets/user.png";
-import addImg from "../assets/add.svg"; // Add image import
-import dotImg from "../assets/dot.svg"; // Dot image import
+import addImg from "../assets/add.svg";
+import dotImg from "../assets/dot.svg";
 
 const Column = ({ tickets, grouping, sortOption, users }) => {
   const groupedTickets = tickets.reduce((acc, ticket) => {

@@ -6,13 +6,12 @@ const KanbanBoard = () => {
   const [tickets, setTickets] = useState([]);
   const [users, setUsers] = useState([]);
   const [grouping, setGrouping] = useState(() => {
-    return localStorage.getItem("grouping") || "status"; // Default to 'status'
+    return localStorage.getItem("grouping") || "status";
   });
   const [sortOption, setSortOption] = useState(() => {
-    return localStorage.getItem("sortOption") || "priority"; // Default to 'priority'
+    return localStorage.getItem("sortOption") || "priority";
   });
 
-  // Data fetching
   useEffect(() => {
     fetch("https://api.quicksell.co/v1/internal/frontend-assignment")
       .then((response) => response.json())
@@ -23,7 +22,6 @@ const KanbanBoard = () => {
       .catch((error) => console.log("Error in fetching data", error));
   }, []);
 
-  // Update localStorage whenever grouping or sortOption changes
   useEffect(() => {
     localStorage.setItem("grouping", grouping);
   }, [grouping]);
